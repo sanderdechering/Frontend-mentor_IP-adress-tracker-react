@@ -5,7 +5,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'MyVeryDarkGray' : "hsl(0, 0%, 17%)",
+        'MyDarkGray' : "hsl(0, 0%, 59%)"
+      }
+    },
   },
   plugins: [],
 }
