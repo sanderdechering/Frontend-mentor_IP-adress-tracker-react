@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import mobile_bg from './assets/pattern-bg-mobile.png'
 import desktop_bg from './assets/pattern-bg-desktop.png'
+import icon_arrow from './assets/icon-arrow.svg'
 function App() {
 
   return (
@@ -15,12 +16,14 @@ function App() {
             <h1 className="text-white text-2xl mt-8 mb-4">
                 IP Address Tracker
             </h1>
-            <div>
-                <input className="p-4 w-full rounded-2xl" placeholder="Search for any IP address or domain" type="text"/>
-                <input className="" type="button"/>
+            <div className="flex flex-row">
+                <input className="p-4 w-full rounded-l-2xl w-4/5 outline-0" placeholder="Search for any IP address or domain" type="text"/>
+                <div className="bg-MyVeryDarkGray w-1/5 rounded-r-2xl">
+                    <img src={icon_arrow} className="m-auto h-4 w-3 mt-5"/>
+                </div>
             </div>
-            <div className="flex flex-col text-center bg-white rounded-2xl mt-6">
-                <div className="flex flex-col mt-4">
+            <div className="flex flex-col text-center bg-white rounded-2xl mt-6 py-6">
+                <div className="flex flex-col">
                     <span className="text-xs font-medium text-MyDarkGray">IP ADRESS</span>
                     <span className="text-xl font-medium mt-1">192.212.174.101</span>
                 </div>
@@ -38,10 +41,6 @@ function App() {
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
   )
 }
