@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App flex flex-col max-w-[375px] ">
 
-        <div className="absolute h-screen overflow-hidden -z-10">
-            <img src={mobile_bg} className=""/>
-            <LeafletMapComponent/>
+        <div className="absolute h-screen overflow-hidden -z-20">
+            <img src={mobile_bg}/>
+            <LeafletMapComponent />
         </div>
 
         <div className="flex flex-col text-center mx-6 ">
