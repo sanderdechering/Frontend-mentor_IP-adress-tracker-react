@@ -3,16 +3,21 @@ import './App.css'
 import mobile_bg from './assets/pattern-bg-mobile.png'
 import desktop_bg from './assets/pattern-bg-desktop.png'
 import icon_arrow from './assets/icon-arrow.svg'
+
+
+import LeafletMapComponent from "./LeafletMap";
+
 function App() {
 
   return (
-    <div className="App flex flex-col max-w-[375px]">
+    <div className="App flex flex-col max-w-[375px] ">
 
-        <img src={mobile_bg} className="absolute -z-10"/>
-        <div className="bg-red-400 absolute -z-20 h-screen w-screen">
-
+        <div className="absolute h-screen overflow-hidden -z-10">
+            <img src={mobile_bg} className=""/>
+            <LeafletMapComponent/>
         </div>
-        <div className="flex flex-col text-center mx-6">
+
+        <div className="flex flex-col text-center mx-6 ">
             <h1 className="text-white text-2xl mt-8 mb-4">
                 IP Address Tracker
             </h1>
@@ -24,7 +29,7 @@ function App() {
             </div>
             <div className="flex flex-col text-center bg-white rounded-2xl mt-6 py-6">
                 <div className="flex flex-col">
-                    <span className="text-xs font-medium text-MyDarkGray">IP ADRESS</span>
+                    <span className="text-xs font-medium text-MyDarkGray">IP ADDRESS</span>
                     <span className="text-xl font-medium mt-1">192.212.174.101</span>
                 </div>
                 <div className="flex flex-col mt-4">
