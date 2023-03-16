@@ -17,7 +17,7 @@ const LeafletMapComponent: React.FC<LeafletMapComponent> = (props) => {
                       boxZoom={false}
                       keyboard={false}  // disable keyboard shortcuts
                       zoomControl={false}  // disable zoom control
-                      className="w-screen h-full">
+                      className="w-full h-full">
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
