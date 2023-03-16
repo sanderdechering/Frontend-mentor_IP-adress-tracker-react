@@ -9,7 +9,7 @@ const LeafletMapComponent: React.FC<LeafletMapComponent> = (props) => {
     return (
         // Return your JSX here
         <MapContainer center={[51.505, -0.09]}
-                      zoom={10}
+                      zoom={17}
                       scrollWheelZoom={false}
                       dragging={false}
                       doubleClickZoom={false}
